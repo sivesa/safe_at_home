@@ -6,4 +6,3 @@ HACKATHON
 In this repo will be all project source code
 
 We will put the youtube url here...
-creativeinnovation.co.za
