@@ -53,7 +53,7 @@ void setup() {
   Serial.print ("Responce:"); Serial.println(responce); 
   delay(1000);
 
-  responce = SIM800_send("AT+SAPBR=3,1,\"APN\",\"internet\" "); //Set APN options => 'RCMNET' 'www'
+  responce = SIM800_send("AT+SAPBR=3,1,\"APN\",\"internet\" "); //Set APN options => 'MTN' 'www'
   Serial.print ("Responce:"); Serial.println(responce); 
   delay(2000);
    
