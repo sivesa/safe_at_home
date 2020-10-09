@@ -119,8 +119,19 @@ void loop() {
      SIM800.println("AT+CMGF=1"); //Set the module in SMS mode
      delay(1000);
      
-     SIM800.println("AT+CMGS=\"0728555002\""); //Send SMS to this number 
+     i = 0;
+     char (*a[5])[10];
+     contact[0]="0123456789";
+     contact[1]="0123456789";
+     contact[2]="0123456789";
+     contact[3]="0123456789";
+     contact[4]="0123456789";
+     
+     while i < 5 {
+     SIM800.println("AT+CMGS=\"contact[i]\""); //Send SMS to this number 
      delay(1000);
+     i++;
+     }
 
      SIM800.println(Link); // we have send the string in variable Link 
      delay(1000);
